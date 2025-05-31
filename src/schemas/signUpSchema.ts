@@ -5,7 +5,6 @@ export const usernameValidation = z
     .min(2, 'username must be atlesat 2 characters')
     .max(12, 'username must be atlesat 12 characters')
     
-
 export const signUpSchema = z.object({
     username: usernameValidation,
     email: z.string().email({message: 'invalid email address'}),
